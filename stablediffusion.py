@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 environ['STABILITY_HOST'] = 'grpc.stability.ai:443'
 stability_api = client.StabilityInference(
-    key=getenv("STABLE_DIFFUSION_API_KEY"),
+    key=getenv("sk-1mfGbGqUu5lQjN4Rw8Aws72H2OqXUzLbiAo4VVROBVIMQ1cO"),
     verbose=True,
     engine="stable-diffusion-xl-1024-v1-0",
 )
