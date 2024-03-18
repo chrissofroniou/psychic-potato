@@ -3,7 +3,7 @@ from os import getenv
 from dotenv import load_dotenv
 
 load_dotenv()
-pool = ConnectionPool(conninfo=getenv("DATABASE_URL"), timeout = 10, max_lifetime=600, check=ConnectionPool.check_connection)
+pool = ConnectionPool(conninfo=getenv("PGSSLMODE=require PGPASSWORD=W9a19q3dus49ZvgYJh0W7V87 psql -h hopefully-ace-lizard-iad.a1.pgedge.io -p 5432 -U admin -d imageai"), timeout = 10, max_lifetime=600, check=ConnectionPool.check_connection)
 
 class DataBase:
     def is_user(user_id: int):
