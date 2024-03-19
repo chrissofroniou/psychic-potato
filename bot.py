@@ -1,4 +1,6 @@
 from deep_translator import GoogleTranslator
+from typing import Final
+from telegram import Update
 
 from os import remove, getenv
 from tiktoken import encoding_for_model
@@ -27,6 +29,9 @@ from telegram.ext import (
     filters,
     CallbackQueryHandler,
 )
+
+TOKEN: Final = "6771226479:AAGn7NWKCGiq-Dq8gOfK1fnFifVi9yGAcro"
+BOT_USERNAME: Final = "@OrecleBot"
 
 (ENTRY_STATE, CHATGPT_STATE,
  DALL_E_STATE, STABLE_STATE,
