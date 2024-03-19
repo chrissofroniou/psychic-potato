@@ -1,6 +1,7 @@
 from deep_translator import GoogleTranslator
 from typing import Final
 from telegram import Update
+from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
 from os import remove, getenv
 from tiktoken import encoding_for_model
