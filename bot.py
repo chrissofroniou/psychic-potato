@@ -331,7 +331,7 @@ async def keyboard_callback(update: Update, context: ContextTypes):
 
 if __name__ == '__main__':
     load_dotenv()
-    application = Application.builder().token(getenv("AAGn7NWKCGiq-Dq8gOfK1fnFifVi9yGAcro")).read_timeout(10).get_updates_read_timeout(10).build()
+    application = Application.builder().token(getenv("6771226479:AAGn7NWKCGiq-Dq8gOfK1fnFifVi9yGAcro")).read_timeout(10).get_updates_read_timeout(10).build()
     translator = GoogleTranslator(source='auto', target='en')
     encoding = encoding_for_model("gpt-3.5-turbo")
     conv_handler = ConversationHandler(
